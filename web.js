@@ -20,7 +20,7 @@ app.configure(function() {
 app.get('/', main.index);
 
 
-var port = process.env.PORT || 5000;
+var port = process.env.PORT || 8124;
 app.listen(port, function() {
   console.log("express-template now listening on port " + port);
 });
