@@ -9,7 +9,8 @@ var app = express.createServer(express.logger());
  */
 app.configure(function() { 
   app.set('views', __dirname + '/views');
-  app.set('view engine', 'jade'); 
+  app.set('view engine', 'jade');
+  app.use(express.favicon());
 });
 
 /**
